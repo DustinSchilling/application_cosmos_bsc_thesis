@@ -51,7 +51,7 @@ network_prot <- network_combined[!(network_combined$feature %in% network_met$fea
 # limma ttest
 ##################################
 proteomics_t <- readRDS("results/proteomics_DE_t.Rda")
-metabolomics_t <- read_csv("C:/Users/DustinSchilling/Documents/GitHub/prot_met_workflow/data/metabolomics_adjusted.csv")
+metabolomics_t <- read_csv("data/metabolomics_adjusted.csv")
 
 metabolomics_t <- merge(metabolomics_t, Biocrates_metabolite_identifier, by.x = "ID", by.y = "feature")
 

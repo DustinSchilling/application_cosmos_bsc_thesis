@@ -54,7 +54,7 @@ Biocrates_metabolite_identifier$feature <- gsub("[()/: -]",".",Biocrates_metabol
 ##################################
 # limma ttest
 ##################################
-metabolomics_DE_t <- read_csv("C:/Users/DustinSchilling/Documents/GitHub/prot_met_workflow/data/metabolomics_adjusted.csv")
+metabolomics_DE_t <- read_csv("data/metabolomics_adjusted.csv")
 
 metabolomics_DE_t <- merge(metabolomics_DE_t, Biocrates_metabolite_identifier, by.x = "ID", by.y = "feature")
 metabolomics_DE_t <- metabolomics_DE_t %>%
